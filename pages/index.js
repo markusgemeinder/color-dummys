@@ -64,11 +64,9 @@ const Button = styled.button`
 
 export default function HomePage() {
   const [imageText, setImageText] = useState("");
-  const [randomImageLink, setRandomImageLink] = useState("");
-
-  useEffect(() => {
-    setRandomImageLink(generateRandomImageLink());
-  }, []);
+  const [randomImageLink, setRandomImageLink] = useState(
+    "https://dummyimage.com/600x400/525e66/00ff00?text=hello"
+  );
 
   function getRandomColor() {
     return Math.floor(Math.random() * 16777215).toString(16);
