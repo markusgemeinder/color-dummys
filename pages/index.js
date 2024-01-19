@@ -15,6 +15,10 @@ const ImageContainer = styled.div`
   text-align: center;
 `;
 
+const Title = styled.h1`
+  color: #32393d;
+`;
+
 const StyledLink = styled.a`
   margin: 1rem;
   padding: 1rem;
@@ -99,6 +103,7 @@ export default function HomePage() {
 
   return (
     <Wrapper>
+      <Title>Random Color Image Generator</Title>
       <ImageContainer>
         <a href={randomImageLink} target="_blank" rel="noopener noreferrer">
           <img src={randomImageLink} alt="Dummy Image" />
@@ -114,6 +119,7 @@ export default function HomePage() {
           id="imageText"
           value={imageText}
           onChange={handleInputChange}
+          default="no text input required"
         />
       </InputContainer>
       <Button onClick={handleNewImage}>generate new image</Button>
