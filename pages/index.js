@@ -119,7 +119,7 @@ export default function HomePage() {
           id="imageText"
           value={imageText}
           onChange={handleInputChange}
-          default="no text input required"
+          defaultValue="no input required"
         />
       </InputContainer>
       <Button onClick={handleNewImage}>generate new image</Button>
