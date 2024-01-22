@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+export const CardContainer = styled.div`
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+`;
+
 export const ImageContainer = styled.div`
   margin-top: 16px;
   text-align: center;
